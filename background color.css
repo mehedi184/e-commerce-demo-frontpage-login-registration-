@@ -3,5 +3,15 @@
     padding: 0;
 }
 body{
-    background-color: lightskyblue;
+    background-color: rgb(175, 73, 112);
+}
+table{
+    background: transparent;
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
 }
