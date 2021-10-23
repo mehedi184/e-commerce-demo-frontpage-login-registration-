@@ -7,7 +7,7 @@
 }
 header{
     width: 100%; height: 100vh;
-    background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(/exam/26-266525_wallpaper-of-colors-smoke-abstract-background-hd-iphone.jpg);
+    background-image:linear-gradient(rgba(218, 52, 154, 0),rgba(106, 171, 209, 0)), url(/26-266525_wallpaper-of-colors-smoke-abstract-background-hd-iphone.jpg);
     background-size: 100% 100%;
 }
 nav{
@@ -19,9 +19,11 @@ nav{
     align-items: center;
 }
 .logo{
-    width: 25%; text-align: center;
+    width: 30%; text-align: center;
     margin-right: 35%;
+    padding-left: 2%;
     /*background: red;*/
+    
 }
 .menu{
     width: 40%;
@@ -50,13 +52,15 @@ section h1{
     letter-spacing: 3px;
     text-shadow:  2px 1px 5px black;
 }
+section h3{
+    padding: 10px;
+}
 section p{
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 10%;
     font-size: 20px;
     word-spacing: 2px;
-
     text-shadow: 1px 1px 1px black;
 }
 section a{
@@ -71,11 +75,12 @@ section a{
 }
 .btnone{
     margin-right: 10%;
-    background: pink;
+    background: #FF8C00;
     text-align: center;
     color: white;
     border: 1px solid pink;
     transition: all .5s ease;
+    padding: 5px;
 }
 .btntwo{
     color: white;
@@ -94,7 +99,8 @@ section h3{
 section input{
     font-size: x-large;
     align-items: center;
-    background: #1d1b31;
+    background: #ffffff;
+    padding: 5px;
 }
 .menu a:first-child:hover{
     
@@ -107,10 +113,17 @@ section input{
     color: red;
 }
 .btnone:hover{
-    background: blue;
+    background: #FFA500	;
     color: black;
 }
 .btntwo:hover{
-    background-color: blue;
+    background-color: rgb(0, 81, 255);
     color: black;
 }
+  @font-face {
+    font-family: 'Rampart One', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Festive&family=Rampart+One&display=swap');
+  }
+  .logo h1 p{
+    font-family: 'Rampart One', cursive
+  }

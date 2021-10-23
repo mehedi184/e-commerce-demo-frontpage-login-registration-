@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Festive&family=Rampart+One&display=swap" rel="stylesheet">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -20,17 +21,15 @@
 <body>
     <header>
         <div>
-            <span class="enulines" onclick="openNav()">&#9776;</span>
+            <span class="hamburger" onclick="openNav()">&#9776;</span>
         </div>
         <nav>
-            <div class= "logo"> <h1 class="animate__animated animate__lightSpeedInLeft"> Geeksntechnology Ltd. </h1> </div>
+            <div class= "logo"> <h1 class="animate__animated animate__zoomInDown"> <p>Mehedi's Art World Ltd.</p>  </h1> </div>
             <div class="menu">
                 <a href="">Home</a>
-                <a href="">Service</a>
-                <a href="">About us</a>
-                <form action="/login.html">
-                    <a href=""class="btnone">Sign In</a>
-                </form>
+                <a href="">Features</a>
+                <a href="">Contacts</a>
+                <a href="/login.html"class="btnone">Sign In</a>
             </div>
         </nav>
         <main>
@@ -39,9 +38,7 @@
                 <h1>LANDING PAGE</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, natus quas. Vel, in. Temporibus, enim. Eius magnam necessitatibus dolor reprehenderit quasi minus, consequuntur aspernatur sequi.</p>
                 <input type="text" email="email">
-                <form action="/form.html">
-                    <a href=""class="btntwo">Subscribe Now</a>
-                </form>    
+                <a href="/login.html"class="btntwo">Subscribe Now</a>    
     </header>
        </section>
             </main>
@@ -55,6 +52,9 @@
         <script>
             const openNav =() =>{
                 document.getElementById('mySidenav').style.width="250px";
+            }
+            const closeNav =() =>{
+                document.getElementById('mySidenav').style.width="0px";
             }
         </script>    
 </body>
