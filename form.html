@@ -8,14 +8,30 @@
     <link rel="stylesheet" href="/background color.css">
 </head>
 <body>
-    <form action="/welcome.html">
-        Name : <input type="text" name="name"> <br>
-        Username : <input type="text"> <br>
-        Email : <input type="text"> <br>
+    <form action="/welcome.html" method="post">
+        <h1>Registration form</h1>
+        Name : <input type="text" name="name" required> <br>
+        Username : <input type="text" name="name" required> <br>
+        Password : <input type="password" name="password" required> <br>
+        Email : <input type="email" name="email" required> <br>
         Gender : <input type="radio" name=" gender" value="male"> Male
         <input type="radio" name=" gender" value="female"> Female
         <br>
-        City : <input type="text"> <br>
+        <label for="City">City : </label>
+        <input type="text" name="City" id="myCity" list="Citylist"> 
+        <datalist id ="Citylist">
+            <option >Dhaka</option>
+            <option >Chittgram</option>
+            <option >Cumilla</option>
+            <option >Mymensingh</option>
+            <option >Syhlet</option>
+            <option >Khulna</option>
+            <option >Faridpur</option>
+            <option >Rajshahi</option>
+            <option >Rangpur</option>
+            <option >Barishali</option>
+        </datalist>
+        <br>
         <input type="submit" value="Submit">
     </form>
 </body>

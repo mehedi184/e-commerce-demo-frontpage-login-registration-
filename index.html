@@ -4,50 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=0.0">
-    <title>Exam</title>
+    <title>Nurin Business Ltd.</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/new style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Festive&family=Rampart+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/next.css">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <script src="https://kit.fontawesome.com/371d841de2.js" crossorigin="anonymous"></script>
+    
    
 </head>
 <body>
     <header>
+        <!--side navagition-->
         <div>
             <span class="hamburger" onclick="openNav()">&#9776;</span>
         </div>
+        <input type="checkbox" name="" id="show">
         <nav>
-            <div class= "logo"> <h1 class="animate__animated animate__zoomInDown"> <p>Mehedi's Art World Ltd.</p>  </h1> </div>
+            <!--navagition bar-->
+            <div class= "logo"> <h1 class="animate__animated animate__zoomInDown"> <p>Nurin World Ltd.</p>  </h1> </div>
             <div class="menu">
                 <a href="">Home</a>
-                <a href="">Features</a>
+                <a href="">About Us</a>
                 <a href="">Contacts</a>
-                <a href="/login.html"class="btnone">Sign In</a>
+                <!--pop up login page-->
+                <label for="" class="btnone">Sign In</label>
+                <a href="#" target="_blank"><i class="fas fa-shopping-cart"></i></a>
             </div>
         </nav>
+        <div class="loginbox">
+            <img src="/unnamed.png" class="avatar" >
+            <h1>Sign-In</h1>
+            <form action="/welcome.html" >
+                <p>Username</p>
+                <input type="text" name="" placeholder="Enter Username" required>
+                <p>Password</p>
+                <input type="text" name="" placeholder="Enter Password" required>
+                <input type="submit" name="" value="Login">
+                <a href="#">Lost your password?</a>
+                <br>
+                <a href="#">Don't have an account?</a>
+            </form>
+        </div>
         <main>
             <section>
-                <h3>Start</h3>
-                <h1>LANDING PAGE</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, natus quas. Vel, in. Temporibus, enim. Eius magnam necessitatibus dolor reprehenderit quasi minus, consequuntur aspernatur sequi.</p>
+                <h3>Fashion , Food & Beauty</h3>
+                <h1>Do Also Visit <span class="change_content"></span></h1>
+                <p>আপনাদের সন্তুষ্টি , আমাদের অঙ্গীকার।</p>
                 <input type="text" email="email">
-                <a href="/login.html"class="btntwo">Subscribe Now</a>    
+                <a href="/form.html" target= "_blank" class="btntwo">Subscribe Now</a>    
     </header>
        </section>
             </main>
+            <!--calling js function for navagition-->
             <div class="sidenav" id="mySidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
                     &times;
                 </a>
-                <a href="/table.html" target="_blank"><i class="fas fa-users">Customer List</i></a>
-                <a href="/form.html" target="_blank"><i class="fas fa-user-plus">Add Customer</i></a>
+                <!--navagition functions-->
+                <a href="/table.html" target="_blank"><i class="fas fa-users"> Customer List</i></a>
+                <a href="/form.html" target="_blank"><i class="fas fa-user-plus"> Add Customer</i></a>
+                <a href="#" ><i class="fas fa-shopping-bag"> Products</i></a>
             </div>
         <script>
             const openNav =() =>{
