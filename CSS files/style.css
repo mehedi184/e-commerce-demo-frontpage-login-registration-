@@ -57,7 +57,7 @@ main{
     text-align: center;
 }
 section{
-    padding-top: 55px;
+    padding-top: 15%;
 }
 section h1{
     margin: 30px 0 20px 0;
@@ -279,3 +279,10 @@ input[type= "checkbox"]{
     font-size: 15px!important;
     cursor: pointer;
 }
+/*copy right*/
+.footer__copy{
+    text-align: center;
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+    margin-top: 3.5rem;
+  }
