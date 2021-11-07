@@ -6,16 +6,17 @@
     text-decoration: none;
 }
 header{
-    width: 100%; height: 100vh;   
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+    width: 100%; height: 10vh;   
 }
+
 body{
     height: 100vh;
     background-image:linear-gradient(rgba(218, 52, 154, 0),rgba(106, 171, 209, 0)), url(/26-266525_wallpaper-of-colors-smoke-abstract-background-hd-iphone.jpg);
     background-size: 100% 100%;
     line-height: 1.6;
     overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 nav{
     width: 100%;
@@ -50,14 +51,16 @@ nav{
     font-weight: bolder; width: 25%;
 }
 main{
-    width: 100%; height: 85vh;
+    width: 100%; height: 100vh;
     display: flex;
     justify-content: center; align-items:  center;
     color: white;
     text-align: center;
 }
 section{
-    padding-top: 15%;
+    min-height: 100vh;
+    padding-top: 10%;
+    display: block;
 }
 section h1{
     margin: 30px 0 20px 0;
@@ -281,8 +284,30 @@ input[type= "checkbox"]{
 }
 /*copy right*/
 .footer__copy{
+    padding-top: 5%;
     text-align: center;
     font-size: var(--small-font-size);
     color: var(--text-color-light);
     margin-top: 3.5rem;
+    clear: both;
   }
+footer{
+    width: 100%;
+}
+.foot{
+    background-color: black;
+}
+.footer_links{
+    float: left;
+}
+.address{
+    float: right;
+}
+
+footer section{
+    padding-left: 200px;
+    
+    width: 100%;
+    height: 30vh;
+
+}
