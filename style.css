@@ -8,10 +8,21 @@
 header{
     width: 100%; height: 10vh;   
 }
-
+header::before {
+    content: "";
+    position: absolute;
+    background-image: url('/ecommerce-2140603__340.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
 body{
     height: 100vh;
-    background-image:linear-gradient(rgba(218, 52, 154, 0),rgba(106, 171, 209, 0)), url(/26-266525_wallpaper-of-colors-smoke-abstract-background-hd-iphone.jpg);
+    background: rgb(190, 252, 252);    /* background-image:linear-gradient(rgba(218, 52, 154, 0),rgba(106, 171, 209, 0)), url(/26-266525_wallpaper-of-colors-smoke-abstract-background-hd-iphone.jpg); */
     background-size: 100% 100%;
     line-height: 1.6;
     overflow: hidden;
