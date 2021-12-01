@@ -1,331 +1,397 @@
-*{
-    margin: 0; padding: 0;
-    box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
-    list-style: none;
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
-header{
-    width: 100%; height: 10vh;   
+body {
+  width: 100%;
+  height: 100%;
+}
+header {
+  width: 100%;
+  height: 10vh;
 }
 header::before {
-    content: "";
-    position: absolute;
-    background-image: url('/ecommerce-2140603__340.jpg') ;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;  
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.4;
+  content: "";
+  position: absolute;
+  background-image: url("/ecommerce-2140603__340.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
 }
-body{
-    height: 100vh;
-    background: rgb(190, 252, 252);    /* background-image:linear-gradient(rgba(218, 52, 154, 0),rgba(106, 171, 209, 0)), url(/26-266525_wallpaper-of-colors-smoke-abstract-background-hd-iphone.jpg); */
-    background-size: 100% 100%;
-    line-height: 1.6;
-    overflow: hidden;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+body {
+  height: 100vh;
+  background: gray; /* background-image:linear-gradient(rgba(218, 52, 154, 0),rgba(106, 171, 209, 0)), url(/26-266525_wallpaper-of-colors-smoke-abstract-background-hd-iphone.jpg); */
+  background-size: 100% 100%;
+  line-height: 1.6;
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
-nav{
-    width: 100%;
-    height: 15vh;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: transparent;
-    position: fixed;
-    z-index: 1;
-    top: 0;
+nav {
+  width: 100%;
+  height: 15vh;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  position: fixed;
+  z-index: 1;
+  top: 0;
 }
-.logo{
-    width: 30%; text-align: center;
-    margin-right: 35%;
-    padding-left: 2%;
-    /*background: red;*/    
+.logo {
+  width: 30%;
+  text-align: center;
+  margin-right: 35%;
+  padding-left: 2%;
+  /*background: red;*/
 }
-.menu{
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
-    /*background: yellow;*/
+.menu {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  /*background: yellow;*/
 }
-.menu a{
-    color: white; text-decoration: none;
-    font-weight: bolder; width: 25%;
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  width: 25%;
 }
-.menu label{
-    color: white; text-decoration: none;
-    font-weight: bolder; width: 25%;
+.menu label {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  width: 25%;
 }
-main{
-    width: 100%; height: 100vh;
-    display: flex;
-    justify-content: center; align-items:  center;
-    color: white;
-    text-align: center;
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
 }
-section{
-    min-height: 100vh;
-    padding-top: 10%;
-    display: block;
+section {
+  min-height: 100vh;
+  padding-top: 10%;
+  display: block;
 }
-section h1{
-    margin: 30px 0 20px 0;
-    font-size: 55px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-shadow:  2px 1px 5px black;
+section h1 {
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-shadow: 2px 1px 5px black;
 }
-section h3{
-    padding: 2px;
+section h3 {
+  padding: 2px;
 }
-section p{
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 10%;
-    font-size: 20px;
-    word-spacing: 2px;
-    text-shadow: 1px 1px 1px black;
+section p {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 10%;
+  font-size: 20px;
+  word-spacing: 2px;
+  text-shadow: 1px 1px 1px black;
 }
-section a{
-    padding: 12px 30px;
-    border-radius:  4px;
-    outline: none;
-    font-size: 13px;
-    font-weight: 500;
-    text-decoration: none;
-    letter-spacing: 1px;
-    transition: all .5s ease;
+section a {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
 }
-.btnone{
-    margin-right: 10%;
-    background: #FF8C00;
-    text-align: center;
-    color: white;
-    border: 1px solid pink;
-    transition: all .5s ease;
-    padding: 5px;
+.btnone {
+  margin-right: 10%;
+  background: #ff8c00;
+  text-align: center;
+  color: white;
+  border: 1px solid pink;
+  transition: all 0.5s ease;
+  padding: 5px;
 }
-.btntwo{
-    color: white;
-    font-weight: bold;
-    border: 1px solid white;
-    /*margin-left: 20%;*/
-    transition: all .5s ease;
+.btntwo {
+  color: white;
+  font-weight: bold;
+  border: 1px solid white;
+  /*margin-left: 20%;*/
+  transition: all 0.5s ease;
 }
-section h3{
-    margin-left: 45%;
-    width: 10%;
-    color: white;
-    font-weight: bold;
-    border: 1px solid white;
+section h3 {
+  margin-left: 45%;
+  width: 10%;
+  color: white;
+  font-weight: bold;
+  border: 1px solid white;
 }
-section input{
-    font-size: x-large;
-    align-items: center;
-    background: #ffffff;
-    padding: 5px;
+section input {
+  font-size: x-large;
+  align-items: center;
+  background: #ffffff;
+  padding: 5px;
 }
-.menu a:first-child:hover{
-    
-    color: red
+.menu a:first-child:hover {
+  color: red;
 }
-.menu a:nth-child(2):hover{
-    color: red;
+.menu a:nth-child(2):hover {
+  color: red;
 }
-.menu a:nth-child(3):hover{
-    color: red;
+.menu a:nth-child(3):hover {
+  color: red;
 }
-.menu a:nth-child(4):hover{
-    color: red;
+.menu a:nth-child(4):hover {
+  color: red;
 }
-.btnone:hover{
-    background: #FFA500	;
-    color: black;
+.btnone:hover {
+  background: #ffa500;
+  color: black;
 }
-.btntwo:hover{
-    background-color: rgb(0, 81, 255);
-    color: black;
+.btntwo:hover {
+  background-color: rgb(0, 81, 255);
+  color: black;
 }
-.hamburger{
-    font-size: 30px;
-    color: #ffffff;
-    cursor: pointer;
-    background : black;
-    margin-left: 50px;
-    margin-bottom: 50px;
+.hamburger {
+  font-size: 30px;
+  color: #ffffff;
+  cursor: pointer;
+  background: black;
+  margin-left: 50px;
+  margin-bottom: 50px;
 }
-  @font-face {
-    font-family: 'Rampart One', cursive;
-    src: url('https://fonts.googleapis.com/css2?family=Festive&family=Rampart+One&display=swap');
+@font-face {
+  font-family: "Rampart One", cursive;
+  src: url("https://fonts.googleapis.com/css2?family=Festive&family=Rampart+One&display=swap");
+}
+.logo h1 p {
+  font-family: "Rampart One", cursive;
+}
+.change_content:after {
+  content: "";
+  animation: changetext 10s infinite linear;
+  color: rgb(249, 253, 0);
+  text-transform: uppercase;
+}
+@keyframes changetext {
+  0% {
+    content: "Nurin world";
   }
-  .logo h1 p{
-    font-family: 'Rampart One', cursive
+  25% {
+    content: "Nurin food world";
   }
-  .change_content:after{
-      content: '';
-      animation: changetext 10s infinite linear;
-      color: rgb(249, 253, 0);
-      text-transform: uppercase; 
+  50% {
+    content: "Samson dream world";
   }
-  @keyframes changetext{
-      0% {content: "Nurin world";}
-      25% {content: "Nurin food world";}
-      50% {content: "Samson dream world";}
-      75% {content: "Anni Beauty world";}
-      100% {content: "Fatima narvana";}
+  75% {
+    content: "Anni Beauty world";
   }
-
-
-  /*side navigation*/
-  .sidenav{
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0; 
-    left : 0;
-    z-index: 1; 
-    background: #272634;
-    padding-top: 60px;
-    overflow-x: hidden;
-    transition: all 0.5s;
-}
-.sidenav a{
-    text-decoration: none;
-    font-size: 20px;
-    color: #fff;
-    display: block;
-    padding: 30px 0 30px 30px;
-}
-.sidenav a :hover{
-    color: rgba(2555,255,255,0.7);
-}
-.closebtn{
-    position: absolute;
-    top: 0;
-    right: 20px;
-    font-size: 40px!important;
+  100% {
+    content: "Fatima narvana";
+  }
 }
 
+/*side navigation*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #272634;
+  padding-top: 60px;
+  overflow-x: hidden;
+  transition: all 0.5s;
+}
+.sidenav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  padding: 30px 0 30px 30px;
+}
+.sidenav a :hover {
+  color: rgba(2555, 255, 255, 0.7);
+}
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 40px !important;
+}
 
 /*login*/
-form a{
-    color: yellow;
+form a {
+  color: yellow;
 }
-.loginbox{
-    display: none;
-    width:  320px;
-    height: 420px;
-    background-color: rgba(0,0,0,0.5);
-    color:  #fff;
-    top: 52%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
+.loginbox {
+  display: none;
+  width: 320px;
+  height: 420px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  top: 52%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
 }
-.avatar{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: calc(50% - 50px);
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
 }
-.loginbox h1{
-    margin:0;
-    padding: 0 0 20px;
-    text-align: center;
-    font-size: 22px;
+.loginbox h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
 }
-.loginbox p{
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
+.loginbox p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
 }
-.loginbox input{
-    width: 100%;
-    margin-bottom: 20px;
+.loginbox input {
+  width: 100%;
+  margin-bottom: 20px;
 }
-.loginbox input[type="text"], input[type= "password"]{
-    border: none;
-    border-bottom: 1px solid #fff;
-    background:  transparent;
-    outline: none;
-    height: 40px;
-    color: #fff;
-    font-size: 16px;
+.loginbox input[type="text"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
 }
-.loginbox input[type="submit"]{
-    border: none;
-    outline: none;
-    height: 40px;
-    background: #fb2525;
-    color: #fff;
-    font-size: 20px;
+.loginbox input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #fb2525;
+  color: #fff;
+  font-size: 20px;
 }
-.loginbox input[type="submit"]:hover{
-    cursor: pointer;
-    background: #489cb1;
-    color: #000;
+.loginbox input[type="submit"]:hover {
+  cursor: pointer;
+  background: #489cb1;
+  color: #000;
 }
-.btnclose{
-    position: absolute;
-    top: 0;
-    right: 20px;
-    font-size: 40px!important;
+.btnclose {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 40px !important;
 }
 #show:checked ~ .loginbox {
-    display: block;
+  display: block;
 }
-input[type= "checkbox"]{
-    display: none;
+input[type="checkbox"] {
+  display: none;
 }
-.loginbox .close-btn{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 15px!important;
-    cursor: pointer;
+.loginbox .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 15px !important;
+  cursor: pointer;
 }
+.c {
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 /*copy right*/
-.footer__copy{
-    padding-top: 5%;
-    text-align: center;
-    font-size: var(--small-font-size);
-    color: var(--text-color-light);
-    margin-top: 3.5rem;
-    clear: both;
+/* .c::before {
+  content: "To Connect With Us";
+  font-size: xx-large;
+  margin-left: 5rem;
+  margin-right: 0.5rem;
+} */
+.c h1 {
+  margin-top: 55rem;
+}
+footer {
+  background-color: #000;
+  height: 25vh;
+  /* margin-top: 55rem; */
+}
+/* footer {
+  margin-left: 10rem;
+} */
+.footer__copy {
+  background-color: #000;
+  text-align: center;
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+  clear: both;
+  color: rgb(252, 255, 97);
+}
+.foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.icons ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.icons ul li {
+  list-style: none;
+  font-size: 1.1rem;
+}
+.icons ul li a {
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.icons ul li a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(215, 255, 71);
+  border-radius: 20px;
+}
+.address ul li {
+  list-style: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  /* font-size: 1.1rem; */
+}
+.icons {
+  margin-right: 20rem;
+}
+.address {
+  margin-left: 25rem;
+}
+#footer_copy {
+  color: #000;
+  background-color: #000;
+}
+@media (max-width: 1200px) and (min-width: 300px) {
+  section {
+    font-size: 3.25rem;
+    position: relative;
+    top: 220px;
   }
-footer{
-    width: 100%;
 }
-.foot{
-    background-color: black;
-}
-.footer_links{
-    float: left;
-}
-.address{
-    float: right;
-}
-
-footer section{
-    padding-left: 200px;
-    width: 100%;
-    height: 30vh;
-
-}
-@media  (max-width:1200px) and (min-width: 300px){
-    section {
-        font-size: 3.25rem;
-        position: relative;
-        top: 220px;    
-    }
-
-  }
